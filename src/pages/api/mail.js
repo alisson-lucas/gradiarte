@@ -8,8 +8,8 @@
 // // async..await is not allowed in global scope, must use a wrapper
 // async function sendMail() {
 //     let transporter = nodemailer.createTransport({
-//         host: 'smtp-relay.sendinblue.com',
-//         port: 587,
+//         host: '',
+//         port: ,
 //         secure: true, 
 //         auth: {
 //             user: 'lucasoliveira.alisson@gmail.com', 
