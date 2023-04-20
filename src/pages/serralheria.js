@@ -21,10 +21,10 @@ function Serralheria() {
             <Flex w='full' bgColor='#D9D9D9' p={desktop ? '40px 72px' : '40px 26px'}>
                 <Flex w='full' maxW='1200px' direction={desktop ? 'row' : 'column' } h='inherit'>
                     <Flex w={desktop ? '50%' : 'full' } gap={3} direction='column' h={desktop ? '500px' : '390px'}>
-                        <Image src="./serralheria/1.png" h={desktop ? '300px' : '210px' } />
+                        <Image src="./serralheria/1.png" h={desktop ? '300px' : '210px' } borderRadius='12px'/>
                         <Flex w='full' direction='row' align='center' justify='center' gap={3}>
-                            <Image src="./serralheria/2.png" h={desktop ? '180px' : '96px' } />
-                            <Image src="./serralheria/3.png" h={desktop ? '180px' : '96px' } />
+                            <Image src="./serralheria/2.png" h={desktop ? '180px' : '96px' } borderRadius='12px'/>
+                            <Image src="./serralheria/3.png" h={desktop ? '180px' : '96px' } borderRadius='12px'/>
                         </Flex>
                     </Flex>
                     <Flex w={desktop ? '50%' : 'full' } gap={8} direction='column' h='inherit' p={desktop ? '0 40px' : '0'}>

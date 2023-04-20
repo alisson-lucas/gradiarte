@@ -53,6 +53,7 @@ export default function Hero() {
                 // Router.push("/obrigado");
                 // setBtnText('Enviado');
                 // console.log(response);
+                window.location.replace('https://wa.me/5581995697610?text=ol%C3%A1%2C+vim+atrav%C3%A9s+do+site+gradiarte.com%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gradis');
             })
             .catch(function (error) {
                 console.log(error);
