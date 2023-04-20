@@ -1,5 +1,5 @@
 // pages/_app.js
-import '../styles/globals.css'
+// import '../styles/globals.css'
 import '@fontsource/lato/700.css'
 
 import { ChakraProvider } from '@chakra-ui/react'
