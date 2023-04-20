@@ -7,6 +7,7 @@ import {
 
 import Nav from '../components/Nav';
 import Footer from "@/components/Footer";
+import Whatsapp from "@/components/whatsapp";
 
 function Esportiva() {
     const [desktop] = useMediaQuery('(min-width: 992px)');
@@ -44,6 +45,7 @@ function Esportiva() {
                     </Flex>
                 </Flex>
             </Flex>
+            <Whatsapp />
             <Footer />
         </>
     );

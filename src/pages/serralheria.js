@@ -7,6 +7,7 @@ import {
 
 import Nav from '../components/Nav';
 import Footer from "@/components/Footer";
+import Whatsapp from "@/components/whatsapp";
 
 function Serralheria() {
     const [desktop] = useMediaQuery('(min-width: 992px)');
@@ -44,6 +45,7 @@ function Serralheria() {
                     </Flex>
                 </Flex>
             </Flex>
+            <Whatsapp />
             <Footer />
         </>
     );

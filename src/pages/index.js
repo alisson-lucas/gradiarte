@@ -9,6 +9,7 @@ import NavHome from '../components/NavHome';
 import AboutUs from '@/components/AboutUs';
 import Products from '@/components/Products';
 import Carousel from '@/components/carousel';
+import Whatsapp from '@/components/whatsapp';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function Home() {
     <>
       <NavHome />
       <Hero />
+      <Whatsapp />
       <AboutUs />
       <Carousel />
       <Products />

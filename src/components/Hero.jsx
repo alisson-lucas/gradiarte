@@ -76,7 +76,7 @@ export default function Hero() {
                     qualidade: a combinação
                     perfeita para sua proteção!</Text>
             </Box>
-            <Flex w={desktop ? '530px' : '340px'} h={desktop ? '530px' : '600px'} bgColor='#D9D9D9' gap={8} direction='column' align='center' borderRadius={desktop ? '60px' : '15px'} p='32px 80px' >
+            <Flex w={desktop ? '530px' : '365px'} h={desktop ? '530px' : '600px'} bgColor='#D9D9D9' gap={8} direction='column' align='center' borderRadius={desktop ? '60px' : '15px'} p='32px 80px' >
                 <Text fontSize='lg'>Solicite um orçamento</Text>
                 <form onSubmit={handleSubmit(sendLead)}>
                     <Flex w={desktop ? '500px' : '355px'} marginLeft={desktop ? '0' : '20px'} bgColor='#32fac11' direction='row' justify='center' align='space-between' wrap='wrap'  >

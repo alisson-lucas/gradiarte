@@ -11,7 +11,7 @@ export default function Products() {
     const [desktop] = useMediaQuery('(min-width: 992px)');
 
     return (
-        <Flex w="full" h='inherit' justify="space-between" gap={10} wrap='wrap' align='center' bgColor='#D9D9D9' p='72px 72px'>
+        <Flex id="products" w="full" h='inherit' justify="space-between" gap={10} wrap='wrap' align='center' bgColor='#D9D9D9' p='72px 72px'>
             <Link href="./concertina" display='flex' alignItems='center' flexDirection='column' w='350px' textAlign='center' align='center' gap={3} >
                 <Image src="./1.png" h={desktop ? '250px' : '200px'}  />
                 <Text>Concertina</Text>

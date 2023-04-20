@@ -7,6 +7,7 @@ import {
 
 import Nav from '../components/Nav';
 import Footer from "@/components/Footer";
+import Whatsapp from "@/components/whatsapp";
 
 function Concertina() {
     const [desktop] = useMediaQuery('(min-width: 992px)');
@@ -17,7 +18,7 @@ function Concertina() {
             <Flex backgroundImage={desktop ? './concertina/hero.png' : './concertina/hero-mobile.png'}   boxSize='200px' align='center' justify='center' bgSize='cover' w='full' h='315px'>
                 <Text color='#fff' fontSize='5xl' fontWeight='bold' border='1'>Concertina</Text>
             </Flex>
-            <Flex w='full' bgColor='#D9D9D9' p='40px 72px'>
+            <Flex w='full' bgColor='#D9D9D9' p={desktop ? '40px 72px' : '40px 26px'}>
                 <Flex w='full' maxW='1200px' direction={desktop ? 'row' : 'column' } h='inherit'>
                     <Flex w={desktop ? '50%' : 'full' } gap={3} direction='column' h={desktop ? '500px' : '390px'} >
                         <Image src="./concertina/1.png" h={desktop ? '300px' : '210px' }   />
@@ -44,6 +45,7 @@ function Concertina() {
                     </Flex>
                 </Flex>
             </Flex>
+            <Whatsapp />
             <Footer />
         </>
     );

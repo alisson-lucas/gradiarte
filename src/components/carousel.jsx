@@ -2,22 +2,21 @@ import {
     Flex,
     Text,
     Image,
-    ButtonGroup,
-    Button,
-    HStack,
+    useMediaQuery,
     Link,
 } from "@chakra-ui/react";
 import useEmblaCarousel from 'embla-carousel-react'
 
 export default function Carousel() {
     const [emblaRef] = useEmblaCarousel()
+    const [desktop] = useMediaQuery('(min-width: 992px)');
 
     return (
-                    <Flex backgroundImage='/gradil/caroussel.png' backgroundRepeat='no-repeat' backgroundSize='cover' w="full" h='395px' justify="center" align='flex-start' gap={6} direction='column' p='20px 125px'>
-                        <Text fontSize='5xl' color='#fff'>Gradil</Text>
-                        <Text color='#fff' fontSize='md' maxW='500px'>uma estrutura versátil e muito útil em diversas áreas, que pode ser utilizada para delimitar áreas, proteger espaços e garantir a segurança das pessoas.</Text>
-                        <Link href="./gradil" p='20px 20px' borderRadius='10px' display='flex' alignItems='center' justifyContent='center' w='220' h='50px' backgroundColor='#fff'>Saiba mais</Link>
-                    </Flex>
+        <Flex backgroundImage={desktop ? '/gradil/caroussel.png' : '/gradil/caroussel-mobile.png'} backgroundRepeat='no-repeat' backgroundSize='cover' w="full" h='395px' justify="center" align='flex-start' gap={6} direction='column' p={desktop ? '20px 125px' : '20px 30px'} >
+            <Text fontSize='5xl' color='#fff'>Gradil</Text>
+            <Text color='#fff' fontSize='md' maxW='500px'>uma estrutura versátil e muito útil em diversas áreas, que pode ser utilizada para delimitar áreas, proteger espaços e garantir a segurança das pessoas.</Text>
+            <Link href="./gradil" p='20px 20px' borderRadius='10px' display='flex' alignItems='center' justifyContent='center' w='220' h='50px' backgroundColor='#fff'>Saiba mais</Link>
+        </Flex>
         // <div className="embla" ref={emblaRef}>
         //     <div className="embla__container">
         //         <div className="embla__slide">
