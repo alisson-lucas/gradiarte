@@ -87,13 +87,13 @@ export default function Hero() {
                             </FormControl>
                             <FormControl width='90%'>
                                 <FormLabel>Telefone</FormLabel>
-                                <InputMask mask="(99)99999-9999" maskChar="" type="text" {...register('phone', {
+                                <Input as={InputMask} mask="(99)99999-9999" maskChar="" type="text" {...register('phone', {
                                     pattern: {
                                         value: /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/,
                                         message: "Insira um telefone válido"
                                     },
                                     required: true
-                                })} style={{width: '100%', height: '40px', borderRadius: '8px', padding: '10px'}} value={phone} onChange={e => setPhone(e.target.value)} />
+                                })} bgColor='#fff' />
                             </FormControl>
                             <FormControl width='90%'>
                                 <FormLabel>CPF ou CNPJ</FormLabel>
