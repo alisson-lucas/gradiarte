@@ -87,6 +87,8 @@ export default function Hero() {
                             </FormControl>
                             <FormControl width='90%'>
                                 <FormLabel>Telefone</FormLabel>
+                                {/* <Input type="text" value={phone} {...register('phone', { required: true })} onChange={e => setPhone(e.target.value)} bgColor='#fff' /> */}
+
                                 <Input as={InputMask} mask="(99)99999-9999" maskChar="" type="text" {...register('phone', {
                                     pattern: {
                                         value: /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/,

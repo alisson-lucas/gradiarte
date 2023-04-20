@@ -56,7 +56,7 @@ async function sendEmail(req, res) {
     // console.log("REQ.BODY", req.body);
     await sendgrid.send({
       to: "lucasoliveira.alisson@gmail.com", // Your email where you'll receive emails
-      from: "Gradiate lucasoliveira.alisson@gmail.com", // your website email address here
+      from: "Gradiarte <lucasoliveira.alisson@gmail.com>", // your website email address here
       subject: `[Contato pelo site]`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
