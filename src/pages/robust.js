@@ -44,6 +44,15 @@ function Robust() {
                             <Flex><Text>Espessura da barra(mm):</Text> <Text fontSize='sm'>25 x 1,50 mm</Text></Flex>
                             <Flex><Text>Malha: (Altura x Largura):</Text> <Text fontSize='sm'>132 x 65 mm</Text></Flex>
                         </Flex>
+
+                        <Text fontWeight='bold' fontSize='22px'>Cores disponíveis</Text>
+                        <Flex direction='row' gap={3}>
+                            <Image src="/verde.png" w='40px' h='40px' />
+                            <Image src="/roxo.png" w='40px' h='40px'/>
+                            <Image src="/amarelo.png" w='40px' h='40px'/>
+                            <Image src="/cinza.png" w='40px' h='40px'/>
+                            <Image src="/preto.png" w='40px' h='40px'/>
+                        </Flex>
                     </Flex>
                 </Flex>
             </Flex>
