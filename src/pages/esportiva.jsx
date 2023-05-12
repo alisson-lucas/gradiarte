@@ -15,7 +15,7 @@ function Esportiva() {
     return (
         <>
             <Nav />
-            <Flex backgroundImage={desktop ? './esportiva/hero.png' : './gradil/hero-mobile.png'} boxSize='200px' align='center' justify='center' bgSize='cover' w='full' h='315px'>
+            <Flex backgroundImage={desktop ? './esportiva/hero.png' : './esportiva/hero-mobile.png'} boxSize='200px' align='center' justify='center' bgSize='cover' w='full' h='315px'>
                 <Text color='#fff' fontSize={desktop ? '75px' : '5xl'}fontWeight='bold' border='1'>Esportiva</Text>
             </Flex>
             <Flex w='full' bgColor='#D9D9D9' p={desktop ? '40px 72px' : '40px 26px'}>
