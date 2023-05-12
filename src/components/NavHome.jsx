@@ -13,7 +13,7 @@ export default function Home() {
 
     return (
         <Flex w="full" h='100' justify="space-between" align='center' position='absolute' p='20px 72px'>
-            <Image src='/logo.png' h='120px' />
+            <Image src='/logo.png' h={desktop ? '110px' : '95px'} />
             <ButtonGroup display={desktop ? 'inline-flex' : 'none'} variant="link" spacing="6">
                 <Link color='#fff' fontSize='14px' fontWeight='hairline'>INÍCIO</Link>
                 <Link href="#aboutUs" color='#fff' fontSize='14px' fontWeight='hairline'>SOBRE NÓS</Link>
