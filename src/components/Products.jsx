@@ -55,6 +55,14 @@ export default function Products() {
                 <Button border='1px solid #171717' borderRadius='20px'>Veja mais</Button>
 
             </Link>
+            <Link href="./alambrado" display='flex' alignItems='center' flexDirection='column' w='350px' textAlign='center' align='center' gap={3} >
+
+                <Image src="./7.png" h={desktop ? '250px' : '200px'} borderRadius='12px'/>
+                <Text>Alambrado</Text>
+                <Text fontSize='xs'>Apresenta um papel muito importante na segurança, principalmente na segurança perimetral.</Text>
+                <Button border='1px solid #171717' borderRadius='20px'>Veja mais</Button>
+
+            </Link>
         </Flex>
     )
 }

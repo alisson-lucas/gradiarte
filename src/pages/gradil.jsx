@@ -16,7 +16,7 @@ function Gradil() {
         <>
             <Nav />
             <Flex backgroundImage={desktop ? './gradil/hero.png' : './gradil/hero-mobile.png'} boxSize='200px' align='center' justify='center' bgSize='cover' w='full' h='315px'>
-                <Text color='#fff' fontSize='5xl' fontWeight='bold' border='1'>Gradil</Text>
+                <Text color='#fff' fontSize={desktop ? '75px' : '5xl'} fontWeight='bold' border='1'>Gradil</Text>
             </Flex>
             <Flex w='full' bgColor='#D9D9D9' p={desktop ? '40px 72px' : '40px 26px'} >
                 <Flex w='full' maxW='1200px' direction={desktop ? 'row' : 'column' } h='inherit'>
@@ -47,11 +47,11 @@ function Gradil() {
 
                         <Text fontWeight='bold' fontSize='22px'>Cores disponíveis</Text>
                         <Flex direction='row' gap={3}>
-                            <Image src="/verde.png" w='40px' h='40px' />
-                            <Image src="/roxo.png" w='40px' h='40px'/>
-                            <Image src="/amarelo.png" w='40px' h='40px'/>
-                            <Image src="/cinza.png" w='40px' h='40px'/>
+                            <Image src="/branco.png" w='40px' h='40px' />
                             <Image src="/preto.png" w='40px' h='40px'/>
+                            <Image src="/verde.png" w='40px' h='40px'/>
+                            <Image src="/cinza.png" w='40px' h='40px'/>
+                            <Image src="/azul.png" w='40px' h='40px'/>
                         </Flex>
                     </Flex>
                 </Flex>

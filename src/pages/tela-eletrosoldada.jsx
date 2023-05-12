@@ -16,7 +16,7 @@ function Eletrosoldada() {
         <>
             <Nav />
             <Flex backgroundImage={desktop ? './eletrosoldada/hero.png' : './eletrosoldada/hero-mobile.png'} boxSize='200px' align='center' justify='center' bgSize='cover' w='full' h='315px'>
-                <Text color='#fff' fontSize='5xl' fontWeight='bold' border='1'>Eletrosoldada</Text>
+                <Text color='#fff' fontSize={desktop ? '75px' : '5xl'} fontWeight='bold' border='1'>Tela Eletrosoldada</Text>
             </Flex>
             <Flex w='full' bgColor='#D9D9D9' p={desktop ? '40px 72px' : '40px 26px'}>
                 <Flex w='full' maxW='1200px' direction={desktop ? 'row' : 'column' } h='inherit'>
@@ -36,11 +36,10 @@ function Eletrosoldada() {
                         <Text fontWeight='bold' fontSize='22px'>Especificações Técnicas:</Text>
 
                         <Flex direction='column' gap='3'>
-                            <Flex><Text>Altura(m):</Text> <Text fontSize='sm'>1,03m / 1,53m / 2,03m / 2,43m</Text></Flex>
-                            <Flex><Text>Largura(m):</Text> <Text fontSize='sm'>2,5m</Text></Flex>
-                            <Flex><Text>Bitola do Fio(mm):</Text> <Text fontSize='sm'>4,80 mm</Text></Flex>
-                            <Flex><Text>Espessura da barra(mm):</Text> <Text fontSize='sm'>25 x 1,50 mm</Text></Flex>
-                            <Flex><Text>Malha: (Altura x Largura):</Text> <Text fontSize='sm'>132 x 65 mm</Text></Flex>
+                            <Flex><Text>Altura(m):</Text> <Text fontSize='sm'>1,02m / 1,22m / 1,52m / 1,83m / 2,83m</Text></Flex>
+                            <Flex><Text>Rolo(m):</Text> <Text fontSize='sm'>25m</Text></Flex>
+                            <Flex><Text>Diâmetro do FIo(mm):</Text> <Text fontSize='sm'>2,00mm / 2,30mm / 2,76mm</Text></Flex>
+                            <Flex><Text>Malha: (Altura x Largura):</Text> <Text fontSize='sm'>5x5cm / 5x10cm / 5x15cm</Text></Flex>
                         </Flex>
 
                         <Text fontWeight='bold' fontSize='22px'>Cores disponíveis</Text>

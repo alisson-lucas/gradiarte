@@ -9,33 +9,33 @@ import Nav from '../components/Nav';
 import Footer from "@/components/Footer";
 import Whatsapp from "@/components/whatsapp";
 
-function Esportiva() {
+function Serralheria() {
     const [desktop] = useMediaQuery('(min-width: 992px)');
 
     return (
         <>
             <Nav />
-            <Flex backgroundImage={desktop ? './gradil/hero.png' : './gradil/hero-mobile.png'} boxSize='200px' align='center' justify='center' bgSize='cover' w='full' h='315px'>
-                <Text color='#fff' fontSize='5xl' fontWeight='bold' border='1'>Esportiva</Text>
+            <Flex backgroundImage={desktop ? './serralheria/hero.png' : './serralheria/hero-mobile.png'} boxSize='200px' align='center' justify='center' bgSize='cover' w='full' h='315px'>
+                <Text color='#fff' fontSize={desktop ? '75px' : '5xl'} fontWeight='bold' border='1'>Serralheria</Text>
             </Flex>
             <Flex w='full' bgColor='#D9D9D9' p={desktop ? '40px 72px' : '40px 26px'}>
                 <Flex w='full' maxW='1200px' direction={desktop ? 'row' : 'column' } h='inherit'>
                     <Flex w={desktop ? '50%' : 'full' } gap={3} direction='column' h={desktop ? '500px' : '390px'}>
-                        <Image src="./esportiva/1.png" h={desktop ? '300px' : '210px' } borderRadius='12px'/>
+                        <Image src="./serralheria/1.png" h={desktop ? '300px' : '210px' } borderRadius='12px'/>
                         <Flex w='full' direction='row' align='center' justify='center' gap={3}>
-                            <Image src="./esportiva/2.png" h={desktop ? '180px' : '96px' } borderRadius='12px'/>
-                            <Image src="./esportiva/3.png" h={desktop ? '180px' : '96px' } borderRadius='12px'/>
+                            <Image src="./serralheria/2.png" h={desktop ? '180px' : '96px' } borderRadius='12px'/>
+                            <Image src="./serralheria/3.png" h={desktop ? '180px' : '96px' } borderRadius='12px'/>
                         </Flex>
                     </Flex>
                     <Flex w={desktop ? '50%' : 'full' } gap={8} direction='column' h='inherit' p={desktop ? '0 40px' : '0'}>
-                        <Text fontWeight='bold' fontSize='22px' >Esportiva</Text>
-                        <Text fontSize='sm'>Usada para delimitar e proteger áreas de atividades esportivas, como campos de futebol, quadras de basquete, pistas de corrida, entre outros. É geralmente feito de materiais resistentes, como aço galvanizado ou alumínio, e é projetado para suportar impactos e pressão física.</Text>
+                        <Text fontWeight='normal' fontSize='22px' >Serralheria</Text>
+                        <Text fontSize='sm'>Uma grade feita de serralheria é uma estrutura de metal composta por barras verticais e horizontais soldadas em conjunto para formar uma grade uniforme. A serralheria é uma técnica de fabricação que envolve a manipulação de metal para produzir produtos duráveis e esteticamente agradáveis, incluindo grades, portões, janelas e escadas.</Text>
 
-                        <Text fontSize='sm'> O gradil esportivo é um elemento importante na segurança dos atletas e do público, pois ajuda a evitar que a bola ou os jogadores saiam do campo de jogo e possam causar danos ou acidentes. Além disso, o gradil pode ser utilizado para separar diferentes áreas do campo de jogo, como a área dos jogadores e a área reservada para o público.</Text>
+                        <Text fontSize='sm'>As grades de serralheria são comuns em ambientes residenciais e comerciais, onde são usadas para proteger as propriedades de intrusos e prevenir acidentes. Além disso, as grades de serralheria podem ser personalizadas para atender às necessidades específicas de um projeto, com diferentes tamanhos, estilos e designs disponíveis.</Text>
 
-                        <Text fontWeight='bold' fontSize='22px'>Especificações Técnicas:</Text>
+                        <Text fontWeight='bold' fontSize='md'>Produção de portões, estrutura de quadro, corrimões e etc</Text>
 
-                        <Flex direction='column' gap='3'>
+                        {/* <Flex direction='column' gap='3'>
                             <Flex><Text>Altura(m):</Text> <Text fontSize='sm'>1,03m / 1,53m / 2,03m / 2,43m</Text></Flex>
                             <Flex><Text>Largura(m):</Text> <Text fontSize='sm'>2,5m</Text></Flex>
                             <Flex><Text>Bitola do Fio(mm):</Text> <Text fontSize='sm'>4,80 mm</Text></Flex>
@@ -50,7 +50,7 @@ function Esportiva() {
                             <Image src="/amarelo.png" w='40px' h='40px'/>
                             <Image src="/cinza.png" w='40px' h='40px'/>
                             <Image src="/preto.png" w='40px' h='40px'/>
-                        </Flex>
+                        </Flex> */}
                     </Flex>
                 </Flex>
             </Flex>
@@ -60,4 +60,4 @@ function Esportiva() {
     );
 }
 
-export default Esportiva;
+export default Serralheria;

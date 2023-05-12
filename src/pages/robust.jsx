@@ -16,7 +16,7 @@ function Robust() {
         <>
             <Nav />
             <Flex backgroundImage={desktop ? './robust/hero.png' : './robust/hero-mobile.png'} boxSize='200px' align='center' justify='center' bgSize='cover' w='full' h='315px'>
-                <Text color='#fff' fontSize='5xl' fontWeight='bold' border='1'>Robust</Text>
+                <Text color='#fff' fontSize={desktop ? '75px' : '5xl'} fontWeight='bold' border='1'>Robust</Text>
             </Flex>
             <Flex w='full' bgColor='#D9D9D9' p={desktop ? '40px 72px' : '40px 26px'}>
                 <Flex w='full' maxW='1200px' direction={desktop ? 'row' : 'column' } h='inherit'>
@@ -35,26 +35,11 @@ function Robust() {
 
                         <Text fontSize='sm'>Além da sua alta resistência, a grade Robust também é valorizada por sua facilidade de instalação e manutenção, o que a torna uma escolha popular para projetos comerciais e residenciais que exigem segurança e durabilidade.</Text>
 
-                        <Text fontWeight='bold' fontSize='22px'>Especificações Técnicas:</Text>
-
-                        <Flex direction='column' gap='3'>
-                            <Flex><Text>Altura(m):</Text> <Text fontSize='sm'>1,03m / 1,53m / 2,03m / 2,43m</Text></Flex>
-                            <Flex><Text>Largura(m):</Text> <Text fontSize='sm'>2,5m</Text></Flex>
-                            <Flex><Text>Bitola do Fio(mm):</Text> <Text fontSize='sm'>4,80 mm</Text></Flex>
-                            <Flex><Text>Espessura da barra(mm):</Text> <Text fontSize='sm'>25 x 1,50 mm</Text></Flex>
-                            <Flex><Text>Malha: (Altura x Largura):</Text> <Text fontSize='sm'>132 x 65 mm</Text></Flex>
-                        </Flex>
-
-                        <Text fontWeight='bold' fontSize='22px'>Cores disponíveis</Text>
-                        <Flex direction='row' gap={3}>
-                            <Image src="/verde.png" w='40px' h='40px' />
-                            <Image src="/roxo.png" w='40px' h='40px'/>
-                            <Image src="/amarelo.png" w='40px' h='40px'/>
-                            <Image src="/cinza.png" w='40px' h='40px'/>
-                            <Image src="/preto.png" w='40px' h='40px'/>
-                        </Flex>
                     </Flex>
                 </Flex>
+            </Flex>
+            <Flex w='full' alignItems='center' justify='center' bgColor='#D9D9D9' p={desktop ? '0 72px' : '40px 26px'}>
+                <Image src="./table.png" w='900px'/>
             </Flex>
             <Whatsapp />
             <Footer />

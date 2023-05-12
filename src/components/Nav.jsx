@@ -12,8 +12,8 @@ export default function Home() {
     const [desktop] = useMediaQuery('(min-width: 992px)');
 
     return (
-        <Flex w="full" h='100' justify="space-between" align='center' bgColor='#141414' p='20px 72px'>
-            <Link href="/"><Image src='/logo.png' h={desktop ? '120px' : '95px'}  /></Link> 
+        <Flex w="full" h='80px' justify="space-between" align='center' bgColor='#141414' p='20px 72px'>
+            <Link href="/"><Image src='/logo.png' h={desktop ? '100px' : '95px'}  /></Link> 
             <ButtonGroup display={desktop ? 'inline-flex' : 'none'} variant="link" spacing="6">
                 <Button display='none' color='#fff' fontSize='14px' fontWeight='hairline'>INÍCIO</Button>
                 <Button color='#fff' fontSize='14px' fontWeight='hairline'>SOBRE NÓS</Button>
