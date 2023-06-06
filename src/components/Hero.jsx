@@ -68,7 +68,7 @@ export default function Hero() {
         setEnterprise('')
         setMeters('')
         setProduct('')
-      }
+    }
 
     return (
         <Flex w="full" backgroundImage={desktop ? './banner.png' : './banner-mobile.png'} gap={8} direction={desktop ? 'row' : 'column'} backgroundPosition='center' align='center' justify={desktop ? 'space-between' : 'space-around'} h={desktop ? '850px' : '1190px'} p={desktop ? '20px 72px' : '120px 40px'} >
